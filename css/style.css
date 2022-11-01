@@ -70,7 +70,7 @@ header h1 {
 .hero-banner {
   width: auto;
   height: 600px;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -166,47 +166,47 @@ header h1 {
 #wireframe {
   grid-area: wireframe;
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url(../images/portfolio-1.jpg);
+    url(images/portfolio-1.jpg);
 }
 
 #wireframe:hover {
-  background-image: url(/images/portfolio-1.jpg);
+  background-image: url(images/portfolio-1.jpg);
 }
 
 #webdesign {
   grid-area: webdesign;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/portfolio-2.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(images/portfolio-2.jpg);
 }
 
 #webdesign:hover {
-  background-image: url(/images/portfolio-2.jpg);
+  background-image: url(images/portfolio-2.jpg);
 }
 
 #coding {
   grid-area: coding;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/portfolio-3.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(images/portfolio-3.jpg);
 }
 
 #coding:hover {
-  background-image: url(/images/portfolio-3.jpg);
+  background-image: url(images/portfolio-3.jpg);
 }
 
 #responsive {
   grid-area: responsive;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/portfolio-4.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(images/portfolio-4.jpg);
 }
 
 #responsive:hover {
-  background-image: url(/images/portfolio-4.jpg);
+  background-image: url(images/portfolio-4.jpg);
 }
 
 #ecommerce {
   grid-area: ecommerce;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/portfolio-5.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(images/portfolio-5.jpg);
 }
 
 #ecommerce:hover {
-  background-image: url(/images/portfolio-5.jpg);
+  background-image: url(images/portfolio-5.jpg);
 }
 
 .portfolioGridArea {
