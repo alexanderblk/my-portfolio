@@ -5,7 +5,7 @@ This project is my personal portfolio which will showcase all my future projects
 
 It was a real challenge to build a website from scratch, but I certainly learned a lot of useful things. One thing I can say is that practice is very important and you have to keep on trying.
 
-URL of the live project: 
+URL of the live project: https://alexanderblk.github.io/my-portfolio/
 
 # Challenges
 
@@ -23,13 +23,13 @@ I had multiple challenges during this project. I had to review my code multiple 
 
 # The Journey
 
-1. I firstly started with the HTML code, I have added comments and created classes that I was gonna use for the CSS.
+1. I firstly started with the HTML code, I have added comments and created classes that I was gonna use for the CSS.![1  Screenshot - Writing HTML](https://user-images.githubusercontent.com/115581300/199294349-ebaf3dd7-e8ce-4b78-ade1-66e6171055d6.png)
 
-2. Secondly, I have written and re-written the CSS code until I got this to work. This is the final version of my code
 
-3. This is the HTML and CSS altogether
+2. Secondly, I have written and re-written the CSS code until I got this to work. This is the final version of my code![2  Screenshot - Writing CSS](https://user-images.githubusercontent.com/115581300/199294370-7e80434f-bd80-4988-ab23-6228dbd09ddf.png)
 
-4. And the final version
+
+3. This is the HTML and CSS altogether![3  Screenshot - HTML linked to CSS](https://user-images.githubusercontent.com/115581300/199294384-061ea9e0-8257-43e2-a696-f07e5e4a8205.png)
 
 # Things I learned
 
