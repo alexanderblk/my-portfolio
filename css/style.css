@@ -4,6 +4,8 @@
   --red: #ED254E;
 }
 
+/* General Style */
+
 * {
   box-sizing: border-box;
 }
@@ -19,9 +21,9 @@ body {
   line-height: 1.5;
 }
 
-/* Main Logo */
-
-#navBar {
+/* HEADER */
+/* Logo */
+header {
   display: flex;
   flex-direction: row;
   background-color: var(--green);
@@ -29,9 +31,7 @@ body {
   justify-content: space-between;
 }
 
-#navBar h1 {
-  display: flex;
-  align-items: center;
+header h1 {
   padding: 10px 10px 10px 40px;
   margin: 30px 30px 30px 0px;
   background-color: var(--white);
@@ -65,9 +65,11 @@ body {
   width: 100%;
 }
 
+/* MAIN IMAGE */
+
 .hero-banner {
   width: auto;
-  height: 500px;
+  height: 600px;
   background-image: url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -85,42 +87,74 @@ body {
   padding: 0 50px 20px 0;
 }
 
-/* Main Content */
-
+/* MAIN CONTENT */
+/* Section Grid */
 .page-wrapper {
-  margin: 0 5%;
-  padding-top: 20px;
+  display: grid;
+  column-gap: 20px;
+  padding: 20px 50px 30px 10px;
+  grid-template-columns: 1fr 6fr;
+  grid-template-areas:
+    "aboutTitle aboutInfo"
+    "portfolioTitle portfolioInfo"
+    "contactTitle contactInfo";
 }
 
-/* About Us */
-
-#about {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 50px;
+#aboutTitle {
+  grid-area: aboutTitle;
 }
 
-.aboutInfo {
-  padding-left: 20px;
-  font-size: 1.1rem;
+#aboutInfo {
+  grid-area: aboutInfo;
+}
+
+#portfolioTitle {
+  grid-area: portfolioTitle;
+}
+
+#portfolioInfo {
+  grid-area: portfolioInfo;
+}
+
+#contactTitle {
+  grid-area: contactTitle;
+}
+
+#contactInfo {
+  grid-area: contactInfo;
+}
+
+/* Heading Style */
+
+.subHeading {
+  padding-right: 20px;
+  font-size: 1.4rem;
   color: var(--green);
+  text-align: right;
+  border-right: solid 5px var(--red);
 }
 
-/* Portoflio */
-#portfolio {
+/* Profile Image Style */
+
+.profileImage {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.myInfo {
   display: flex;
   flex-direction: row;
-  padding-bottom: 50px;
 }
 
-/* Portfolio Gird */
-
-.portfolioItems {
+/* Portfolio GRID */
+#portfolioInfo {
   padding-left: 20px;
   display: grid;
   width: 100%;
   height: 1200px;
-  grid-template-rows: 50% 25% 25%;
+  grid-template-rows: 3fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     'wireframe wireframe'
@@ -128,29 +162,51 @@ body {
     'responsive ecommerce';
 }
 
+/* Images for Portfolio GRID */
 #wireframe {
   grid-area: wireframe;
-  background-image: url(../images/portfolio-1.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url(../images/portfolio-1.jpg);
+}
+
+#wireframe:hover {
+  background-image: url(/images/portfolio-1.jpg);
 }
 
 #webdesign {
   grid-area: webdesign;
-  background-image: url(../images/portfolio-2.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/portfolio-2.jpg);
+}
+
+#webdesign:hover {
+  background-image: url(/images/portfolio-2.jpg);
 }
 
 #coding {
   grid-area: coding;
-  background-image: url(../images/portfolio-3.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/portfolio-3.jpg);
+}
+
+#coding:hover {
+  background-image: url(/images/portfolio-3.jpg);
 }
 
 #responsive {
   grid-area: responsive;
-  background-image: url(../images/portfolio-4.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/portfolio-4.jpg);
+}
+
+#responsive:hover {
+  background-image: url(/images/portfolio-4.jpg);
 }
 
 #ecommerce {
   grid-area: ecommerce;
-  background-image: url(../images/portfolio-5.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/portfolio-5.jpg);
+}
+
+#ecommerce:hover {
+  background-image: url(/images/portfolio-5.jpg);
 }
 
 .portfolioGridArea {
@@ -160,22 +216,40 @@ body {
   margin: 10px;
   cursor: pointer;
   display: grid;
-  align-content: end;
+  align-content: flex-end;
+  padding: 25px 0;
+  border: solid 5px var(--green);
 }
 
-#contact {
+.projectTitle {
+  width: fit-content;
+  display: block;
+  padding: 20px;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* Contact Section */
+.contactDetails {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
-.subHeading {
-  width: auto;
-  height: auto;
-  padding-right: 20px;
-  font-size: 1.4rem;
+.contactDetails a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  padding: 0 60px;
   color: var(--green);
-  text-align: right;
-  border-right: solid 5px var(--red);
+}
+
+.contactDetails a:hover {
+  color: var(--red);
+  text-decoration: underline;
 }
 
 /* Typography CSS */
@@ -186,8 +260,92 @@ h4,
 h5,
 h6 {
   margin: 0;
+  padding: 0;
 }
 
 p {
   margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+   body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Responsive Header */
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 5% 0;
+  }
+
+  header h1 {
+    margin: 0 0 5% 0;
+    padding: 1% 0;
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  #navigation a {
+    font-size: 1.1rem;
+    border-bottom: solid 2px white;
+    padding: 5px;
+    margin: 0 0 50px 0;
+  }
+
+  /* Responsive Section GRID */
+  .page-wrapper {
+    padding: 20px 0 0 0;
+    row-gap: 10px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "aboutTitle"
+      "aboutInfo"
+      "portfolioTitle"
+      "portfolioInfo"
+      "contactTitle"
+      "contactInfo";
+  }
+
+  .subHeading {
+    padding-bottom: 10px;
+    text-align: center;
+    border-right: none;
+    border-bottom: solid 5px var(--red);
+  }
+
+  /* About Me */
+  .myInfo {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileImage {
+    margin: 0;
+  }
+/* Projects GRID */
+  #portfolioInfo {
+    height: 1500px;
+    padding: 0px 0px 0px 0px;
+    margin: 0;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'wireframe'
+      'webdesign'
+      'coding'
+      'responsive'
+      'ecommerce';
+  }
+/* Contact Details */
+  .contactDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
